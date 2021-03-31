@@ -10,7 +10,7 @@ class App extends Component {
 
     //console.log(myLocalStorageData);
     return myLocalStorageData;
-  };s
+  };
 
   render() {
     return (
