@@ -8,11 +8,13 @@ class App extends Component {
   };
 
   getMyStorage = () => {
-    const myCookieData = document.cookie.split("=")[1];
+    const myCookieData = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith("Year="))
+      .split("=")[1];
     const myLocalStorageData = localStorage.getItem("Paragon");
     const mySessionStorageData = sessionStorage.getItem("frontend");
 
-    //console.log([myCookieData, myLocalStorageData, mySessionStorageData]);
     return [myCookieData, myLocalStorageData, mySessionStorageData];
   };
 
