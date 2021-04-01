@@ -8,9 +8,9 @@ class App extends Component {
   };
 
   getMyStorage = () => {
-    let myCookieData = document.cookie.split("=")[1];
-    let myLocalStorageData = localStorage.getItem("Paragon");
-    let mySessionStorageData = sessionStorage.getItem("frontend");
+    const myCookieData = document.cookie.split("=")[1];
+    const myLocalStorageData = localStorage.getItem("Paragon");
+    const mySessionStorageData = sessionStorage.getItem("frontend");
 
     //console.log([myCookieData, myLocalStorageData, mySessionStorageData]);
     return [myCookieData, myLocalStorageData, mySessionStorageData];
