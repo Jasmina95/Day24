@@ -6,7 +6,7 @@ class App extends Component {
   };
 
   getLocalStorage = () => {
-    let myLocalStorageData = localStorage.getItem("Arena");
+    const myLocalStorageData = localStorage.getItem("Arena");
 
     //console.log(myLocalStorageData);
     return myLocalStorageData;
